@@ -24,9 +24,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(FontAwesomeIcons.bell),
-            onPressed: () {
-              // Action handled by bottom bar or top icon
-            },
+            onPressed: () {},
           )
         ],
       ),
@@ -35,7 +33,6 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Greeting Header
             Row(
               children: [
                 const CircleAvatar(
@@ -54,8 +51,6 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-
-            // Featured Banner
             Card(
               child: Container(
                 padding: const EdgeInsets.all(20),
@@ -104,8 +99,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-
-            // Quick Actions
             const Text('Quick Actions', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             Row(
@@ -114,12 +107,10 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(width: 12),
                 _actionCard(context, 'Suggest', FontAwesomeIcons.lightbulb, const SuggestionScreen()),
                 const SizedBox(width: 12),
-                _actionCard(context, 'Request', FontAwesomeIcons.codeRequest, const RequestScreen()),
+                _actionCard(context, 'Request', FontAwesomeIcons.codePullRequest, const RequestScreen()),
               ],
             ),
             const SizedBox(height: 24),
-
-            // Latest Announcement
             const Text('Latest Announcement', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             Container(
