@@ -74,7 +74,7 @@ class AppDrawer extends StatelessWidget {
           ),
           _drawerItem(
             context,
-            icon: FontAwesomeIcons.codeRequest,
+            icon: FontAwesomeIcons.codePullRequest,
             title: 'Request',
             onTap: () {
               Navigator.pop(context);
