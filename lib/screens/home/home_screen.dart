@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(width: 12),
                 _actionCard(context, 'Suggest', FontAwesomeIcons.lightbulb, const SuggestionScreen()),
                 const SizedBox(width: 12),
-                _actionCard(context, 'Request', FontAwesomeIcons.codePullRequest, const RequestScreen()),
+                _actionCard(context, 'Request', FontAwesomeIcons.layerGroup, const RequestScreen()),
               ],
             ),
             const SizedBox(height: 24),
